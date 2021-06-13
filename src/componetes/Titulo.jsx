@@ -1,6 +1,6 @@
 function Titulo(props){
     return(
-        <h2>{props.children}</h2>
+        <h1 className="titulo">{props.children}</h1>
     )
 }
 

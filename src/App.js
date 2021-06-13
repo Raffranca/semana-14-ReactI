@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+import Titulo from './componetes/Titulo';
+import Mapedados from './componetes/Mapedados';
+import React, {Componet} from 'react';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Titulo className= "mainha"> Oi, Mainha!!!</Titulo>
+      <Titulo className="title">Meu Primeiro Projeto React do Zero</Titulo>
+      
+      <Mapedados/>
     </div>
   );
+  
 }
 
 export default App;
