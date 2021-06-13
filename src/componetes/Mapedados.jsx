@@ -1,15 +1,16 @@
 import teatros from '../service/dados-criados'
 
+
 function Mapedados(){
     return(
         <div>
             {teatros.map(teatro => {
                 return(
-                    <div>
-                        <h3>{teatro.Nome} </h3>
-                        <img src={teatro.Imagem} alt={teatro.Nome} />
-                        <p>{teatro.Inauguração}</p>
-                        <p>{teatro.Capacidade}</p>
+                    <div className="card">
+                        <h3 className="title">{teatro.Nome} </h3>
+                        <img src={teatro.Imagem} alt={teatro.Nome} className="img" />
+                        <p className="infor">{teatro.Inauguração}</p>
+                        <p className="infor">{teatro.Capacidade}</p>
                     </div>
                 )
             })}
